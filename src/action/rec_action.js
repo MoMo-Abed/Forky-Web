@@ -1,4 +1,4 @@
-import { GET_RECIPE,GET_RECIPES,GET_ING,GET_LOVED_RECIPE } from './types';
+import { GET_RECIPE,GET_RECIPES,GET_ING,GET_LOVED_RECIPE,LOVED_TO_BIGCARD } from './types';
 import axios from 'axios';
 
 
@@ -52,3 +52,15 @@ return function (dispatch){
              }}
             
             
+
+
+
+    export function LovedToMain(state) {
+        return function (dispatch){
+            dispatch ({
+                type : LOVED_TO_BIGCARD,
+                payload: state
+
+                        })
+                             }}
+                            

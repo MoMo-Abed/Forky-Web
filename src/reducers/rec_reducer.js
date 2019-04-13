@@ -1,4 +1,4 @@
-import {GET_RECIPES,GET_RECIPE,GET_LOVED_RECIPE,GET_ING} from '../action/types';
+import {GET_RECIPES,GET_RECIPE,GET_LOVED_RECIPE,GET_ING,LOVED_TO_BIGCARD} from '../action/types';
 
 const initialState = {
     recipes: [],
@@ -34,6 +34,13 @@ export default function(state=initialState,action){
                 LovedRec:[action.state,...state.LovedRec]
             }
         
+
+        case LOVED_TO_BIGCARD:
+        return{
+            ...state,
+            recipe: action.payload
+        }
+
     default :
         return state
     }

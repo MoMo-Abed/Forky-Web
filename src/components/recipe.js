@@ -21,26 +21,24 @@ import { LovedRec,ADDING } from '../action/rec_action';
         
         else{
          
-                ingredients = recipe.ingredients.map((ingredient,index) => {
-                return <ListGroupItem key={ingredient}> <i className="fas fa-flask Li_Icon"></i>{'  '}{ingredient}
+                ingredients = recipe.ingredients.map((ingredient) => {
+                return <ListGroupItem key={ingredient.text}> <i className="fas fa-flask Li_Icon"></i>{'  '}{ingredient.text}
 
                 </ListGroupItem>     
                 })
          
         }
     
-        const recipeId = recipe.recipe_id;
-        const recipeImage = recipe.image_url;
         
         return (
             <React.Fragment>
               <Card>
                 <span className="img-fig">
-                <Card.Img alt={recipeId} src={recipeImage}/>
+                <Card.Img alt={recipe.image} src={recipe.image}/>
                 </span>
                 <Card.ImgOverlay>
                   <Card.Title> <span>
-                  { recipe.title.length < 10 ? `${recipe.title}` : `${recipe.title.substring(0, 15)}...` }
+                  { recipe.label.length < 10 ? `${recipe.label}` : `${recipe.label.substring(0, 15)}...` }
                   </span>     </Card.Title>
                 </Card.ImgOverlay>
                 <Card.Body>
@@ -57,12 +55,13 @@ import { LovedRec,ADDING } from '../action/rec_action';
                   )}
                   
                   </div>
-                  <ListGroup >
+                  <div style={{height:'50%',overflowX:'scroll'}} >
+                  <ListGroup style={{overflowX:'scroll'}} >
                     
                     {ingredients}
 
                   </ListGroup>
-
+                  </div>
                 </Card.Body>
               </Card>
           

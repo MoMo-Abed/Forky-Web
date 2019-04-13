@@ -1,3 +1,4 @@
+2DC268
 
 
 .appcontainer{
@@ -31,7 +32,7 @@
   z-index: 1;
 }
 
-.fuckyou{
+.recipessrcoll{
   height: 140vh;
   overflow-x: scroll;
 }
@@ -55,7 +56,7 @@
   font-size: 1.1rem;
 }
 .btnsearch{
-  background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+  background: #2DC268;
     border-radius: 10rem;
     border: none;
     text-transform: uppercase;
@@ -75,7 +76,7 @@
 
 .recipesPublisher{
   font-size: 9px;
-  color: #F48982;
+  color: #2DC268;
   margin-left: 70px;
   margin-top: -14px;
   width: 100px;
@@ -123,8 +124,8 @@
 .btn-search{
   position: relative;  
   
-  height: 90%;
-  background-image: linear-gradient(to right bottom, #f12711, #f5af19);
+  height: 95%;
+  background: #2DC268; 
 border: none;
   text-align: center;
   color: #fff;
@@ -153,7 +154,7 @@ border: none;
 
 .recipesPublisher{
   font-size: 9px;
-  color: #f12711;
+  color: #2DC268;
   margin-left: 70px;
   margin-top: -14px;
   width: 100px;
@@ -166,9 +167,6 @@ border: none;
   color: #252220;
 }
 
-  .recipestitle{
-
-  }
 
 
  
@@ -218,7 +216,7 @@ border: none;
       position: absolute;
       top: 0;
       left: 0;
-      background-image: linear-gradient(to right bottom, #f12711, #f5af19);
+      background: #2DC268 ;
       opacity: .4; }
  
   .card-title span {
@@ -226,7 +224,7 @@ border: none;
     -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
       padding: 1.3rem 2rem;
-      background-image: linear-gradient(to right bottom,  #f12711, #f5af19);
+      background: #2DC268;
       
       
   }
@@ -242,7 +240,7 @@ border: none;
   margin-left: 19px;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to right bottom, #f12711, #f5af19);
+  background:#2DC268;
   opacity: .4; 
 
 }
@@ -291,12 +289,12 @@ border: none;
 
 
 .card-img-overlay{
-  height: 40%;
+  height: 100px;
 }
 .addtoshoppingtag{
   font-size: 1.1rem;
   font-weight: 600;
-  color: #e43622;
+  color: #2DC268;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   text-align: center;
@@ -347,7 +345,6 @@ border: none;
 
   }
 
- 
 
 
 
